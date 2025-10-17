@@ -57,7 +57,7 @@ class AuthController extends Controller
         }
 
         // Génération du token
-        $token = $user->createToken('API Token', ['*'], $expirationTime)->plainTextToken;
+        $token = $user->createToken('API Token', ['*'])->plainTextToken;
 
         return response()->json([
             'token' => $token,

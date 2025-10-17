@@ -26,3 +26,4 @@ class CheckModuleActive
         return $next($request);
     }
 }
+
